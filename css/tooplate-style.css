@@ -144,6 +144,8 @@ b, strong {
   margin-top: 5px;
   min-width: 260px;
   position: relative;
+  height: 45px;
+  overflow: visible;
 }
 
 .animated-item {
@@ -160,6 +162,7 @@ b, strong {
   top: 0;
   right: 0;
   left: 0;
+  white-space: nowrap;
   animation: BottomTotop 6s linear infinite 0s;
 }
 .animated-item:nth-child(2n+2) {
