@@ -602,3 +602,74 @@ b, strong {
     vertical-align: top;
   }
 }
+
+/* Error Handler Modal Styles */
+#statusModal .modal-header {
+  border-bottom: 2px solid #dee2e6;
+  padding: 1.25rem 1.5rem;
+}
+
+#statusModal .modal-header.modal-success {
+  background-color: #d4edda;
+  border-bottom-color: #28a745;
+  color: #155724;
+}
+
+#statusModal .modal-header.modal-error {
+  background-color: #f8d7da;
+  border-bottom-color: #dc3545;
+  color: #721c24;
+}
+
+#statusModal .modal-header.modal-info {
+  background-color: #d1ecf1;
+  border-bottom-color: #17a2b8;
+  color: #0c5460;
+}
+
+#statusModal .modal-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#statusModal .modal-title i {
+  font-size: 1.5rem;
+}
+
+#statusModal .modal-body {
+  padding: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#statusModal .modal-footer {
+  border-top: 1px solid #dee2e6;
+  padding: 1rem 1.5rem;
+}
+
+#statusModal .close {
+  color: inherit;
+  opacity: 0.7;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+#statusModal .close:hover {
+  opacity: 1;
+}
+
+#statusModal .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+#statusModal .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}

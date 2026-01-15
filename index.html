@@ -9,12 +9,24 @@
 
   <title>I'm Sneh Shah</title>
 
+  <!-- Preconnect to external domains for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="images/sneh.png" as="image" fetchpriority="high">
+  <link rel="preload" href="images/ss.png" as="image">
+  <link rel="preload" href="font/unicons.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="css/tooplate-style.css" as="style">
+  <link rel="preload" href="css/unicons.css" as="style">
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="icon" href="images/ss.png">
   <link rel="stylesheet" href="css/unicons.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <script src="https://kit.fontawesome.com/c36fbfff65.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c36fbfff65.js" crossorigin="anonymous" defer></script>
 
   <!-- MAIN STYLE -->
   <link rel="stylesheet" href="css/tooplate-style.css">
@@ -68,9 +80,9 @@
 
             <p>Welcome to my corner of the internet! I'm a passionate Engineering student specializing in Artifical Intelligence at the University of Waterloo. I'm all about crafting innovative and compelling solutions to tackle people’s toughest problems. When I'm not buried in books, catch me at hackathons, enjoying sports, or whipping up something delicious! 
              <br /><br />
-            Previously @ <strong>xAI (Twitter)</strong>, <strong>Capital One</strong>, <strong>Nokia</strong>, <strong>BlackBerry</strong>, and <strong>SunGrid Solutions</strong>.
+            Previously @ <strong>BetterUp</strong>, <strong>xAI (Twitter)</strong>, <strong>Capital One</strong>, <strong>Nokia</strong>, <strong>BlackBerry</strong>, and <strong>SunGrid</strong>.
             <br /><br />
-            I'm currently looking for 2026 New Grad roles in Software Engineering — let's connect!
+            Let's connect!
           </p>
           <p style="margin-top: 20px;">
           <i class="fas fa-envelope" style="color:#007bff; margin-right: 8px;"></i>
@@ -81,11 +93,9 @@
             <div class="custom-btn-group mt-4">
               <!-- <a href="https://docs.google.com/document/d/1wMuNsK65ULltHsCG9COCgRoXHJLVzBFCgLdlIXtabN0/edit?usp=sharing" target="_blank" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> My Resume</a>-->
               <a href="https://www.linkedin.com/in/sneh-shah-567a8719a/" target="_blank" class="fab fa-linkedin"
-                class="btn custom-btn custom-btn-bg custom-btn-link" style="font-size: 30px;">  </a>
-              <a class="fas fa-ellipsis-h" class="btn custom-btn custom-btn-bg custom-btn-link"> </a>
+                class="btn custom-btn custom-btn-bg custom-btn-link" style="font-size: 30px; margin-right: 20px;">  </a>
               <a href="mailto:s286shah@uwaterloo.ca" target="_blank" class="fas fa-comments"
-                class="btn custom-btn custom-btn-bg custom-btn-link" style="font-size: 30px;"> </a>
-              <a class="fas fa-ellipsis-h" class="btn custom-btn custom-btn-bg custom-btn-link"> </a>
+                class="btn custom-btn custom-btn-bg custom-btn-link" style="font-size: 30px; margin-right: 20px;"> </a>
               <a href="https://github.com/snehshah102" target="_blank" class="fab fa-github"
                 class="btn custom-btn custom-btn-bg custom-btn-link"style="font-size: 30px;"> </a>
             </div>
@@ -95,7 +105,7 @@
         <div class="col-lg-5 col-md-12 col-12">
           <div class="about-image svg">
             <!-- <img src="images/undraw/front-image.jpg" class="img-fluid" alt="svg image"> -->
-            <img src="images/sneh.png" class="img-fluid" alt="svg image">
+            <img src="images/sneh.png" class="img-fluid" alt="svg image" fetchpriority="high" loading="eager" width="500" height="500">
 
           </div>
         </div>
@@ -104,6 +114,26 @@
     </div>
   </section>
 
+  <!-- Error/Success Modal -->
+  <div class="modal fade" id="statusModal" tabindex="-1" role="dialog" aria-labelledby="statusModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header" id="statusModalHeader">
+          <h5 class="modal-title" id="statusModalLabel">Status</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="statusModalBody">
+          <p id="statusModalMessage"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -111,6 +141,7 @@
   <script src="js/jQuery.headroom.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/smoothscroll.js"></script>
+  <script src="js/error-handler.js"></script>
   <script src="js/custom.js"></script>
 
 </body>
